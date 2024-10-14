@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --primary: 30, 100%, 55%;
+    --primary-foreground: 18, 84%, 61%;
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 60%;
+  }
+}
+
+@layer components {
+  .news-content p {
+    @apply mb-6 text-sm font-normal opacity-80 leading-8;
+  }
+  .case-content p {
+    @apply mb-2 text-lg font-normal opacity-80 leading-8;
+  }
+}
+
+html, body {
+  min-height: 100vh;
+  background: #ffffff;
+  background-color: #ffffff;
+}
+
+.border-radius-20 {
+  border-radius: 20px;
+}
+
+.solution-bg {
+  background: #F3F7FB;
+}
+
+.free-enter-bg {
+  background: #EAF2FE;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%; 
+  overflow: hidden; 
+}
+
+.solution-case {
+  background-color: #EAF0F8;
+}
+
+.news-content > img {
+  padding-bottom: 8px;
+}
+.news-detail .more-case {
+  background-color: #F3F6F9;
+}
