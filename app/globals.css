@@ -57,3 +57,7 @@ html, body {
 .news-detail .more-case {
   background-color: #F3F6F9;
 }
+
+#zc__sdk__sys__btn {
+  display: none
+}

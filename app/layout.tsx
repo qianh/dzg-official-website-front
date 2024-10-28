@@ -1,4 +1,5 @@
 import DzgLayout from "@/app/components/layout/index";
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
@@ -21,6 +22,24 @@ export default function RootLayout({
       <body>
         <DzgLayout children={children} />
       </body>
+      <Script>
+        {
+          `
+            (function (w, d, e, x) {
+              w[e] = function () {
+                w.cbk = w.cbk || [];
+                w.cbk.push(arguments);
+              };
+              x = d.createElement("script");
+              x.async = true;
+              x.id = "zhichiScript";
+              // ***为您的自定义域名
+              x.src = "https://dzg.sobot.com/chat/frame/v6/entrance.js?sysnum=566817082dc0443a834d8308e574338e&channelid=17";
+              d.body.appendChild(x);
+            })(window, document, "zc")
+          `
+        }
+      </Script>
     </html>
   );
 }

@@ -31,11 +31,9 @@ export default function FloatingToolbar(props: IFloatingToolbarProps) {
     <div className="fixed bottom-24 right-12 w-[58px] bg-black rounded-lg z-20">
       <div
         className={ICON_CSS}
-        onClick={() =>
-          window.open(
-            "https://gm1.sobot.com/chat/pc/v6/index.html?sysnum=566817082dc0443a834d8308e574338e&channelid=17"
-          )
-        }
+        onClick={() => {
+          document.getElementById("zc__sdk__sys__btn").click();
+        }}
       >
         <CustomerService />
       </div>

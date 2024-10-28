@@ -18,7 +18,7 @@ const MoreCase: React.FC<CaseDetailProps> = ({ data, name }) => {
         {data?.length && (
           <div className={`flex flex-col items-center`}>
             <div className="pt-24 text-5xl font-black">{name}</div>
-            <div className="flex pt-10 w-[100%] space-x-[20px]">
+            <div className="flex pt-10 w-[100%] space-x-[20px] justify-between">
               {data?.slice(0, DEFAULT_SHOW_COUNT).map((item, index) => (
                 <CardLink key={index} item={item} href={item.tag === 'solution' ? item.url! : `/cases/${item.module}/${urlParamEncode(item.id + '')}`} />
               ))}
