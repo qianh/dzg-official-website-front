@@ -17,6 +17,7 @@ const DynamicRender = ({tags, ...props}: IDynamicRenderProps) => {
           data: tag.tags || tag.list,
           name: tag.name,
           code: tag.code,
+          imageUrl: tag.imageUrl,
           ...props
         };
         return <DynamicComponent key={index} {...DynamicProps} />;

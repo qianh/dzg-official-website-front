@@ -33,7 +33,7 @@ export default function Solutions(props: ISolutionsProps) {
         <div className="pt-4 ml-24 text-3xl font-black">{item.title}</div>
         <div className="pt-16 ml-24 w-96">{item.introduction}</div>
         <div className="absolute flex items-center bottom-24 ml-24 pl-6 pr-6 text-lg font-medium h-12 border border-black rounded-full hover:cursor-pointer space-x-2">
-          <span>获取同款解决方案</span>
+          <span><a href={`/solutions/${item.code}`} target="_blank" rel="noopener noreferrer">获取同款解决方案</a></span>
           <ArrowLongRightIcon className="h-4 w-4"/>
         </div>
       </div>

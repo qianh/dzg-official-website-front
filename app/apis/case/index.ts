@@ -26,7 +26,7 @@ export const allCases: TTagData[] = [
         title: "打造数字化透明工厂，传统企业数字转型的新思路！",
         tag: "英科",
         module: "supply",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240920154946/56c8b50d-3139-4002-822c-5a54d03c0ad3/cases-1.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240920154946/56c8b50d-3139-4002-822c-5a54d03c0ad3/英科.jpg",
         introduction: "大掌柜助力传统企业数字化转型，实现供应链全链路生态建联",
         content: `
           <div class="pt-6"></div>
@@ -68,21 +68,6 @@ export const allCases: TTagData[] = [
     ],
   },
   {
-    name: "制造业",
-    code: "manufacture",
-    list: [
-      {
-        id: 200,
-        title: "大掌柜助力环世物流集团全业务数字化转型升级2",
-        tag: "Worldwide Logistics",
-        module: "manufacture",
-        url: "/home/case-demo.png",
-        introduction:
-          "大掌柜全面升级环世物流集团全业务系统，助力环世集团高效开展全球数字化业务。",
-      },
-    ],
-  },
-  {
     name: "空运",
     code: "air",
     list: [
@@ -91,7 +76,7 @@ export const allCases: TTagData[] = [
         title: "解码核心痛点，缔造高效跨境物流生态：技术桥接与流程重塑",
         tag: "瑞升",
         module: "air",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923151858/2efbc6b9-c4e4-4cd7-ae9d-d8e3e9530d22/cases-3.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923151858/2efbc6b9-c4e4-4cd7-ae9d-d8e3e9530d22/瑞升.jpg",
         introduction: "跨越平台壁垒，赋能跨境物流新纪元：大掌柜助力瑞升国际优化快递航空业务",
         content: `
           <div class="pt-6"></div>
@@ -130,7 +115,7 @@ export const allCases: TTagData[] = [
         title: "携手成长好伙伴——大掌柜助力安信航应对扩张期难题",
         tag: "安信航",
         module: "sea",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923155443/2c0a30d7-90dc-4c14-97d0-b415a3f16d83/cases-4.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923155443/2c0a30d7-90dc-4c14-97d0-b415a3f16d83/安信航.jpg",
         introduction: "如何做好业务&服务管理是企业扩张期时难以避免的问题，大掌柜通过多年行业经验分享和不断创新的技术力量，助力安信航向数字化未来迈进！",
         content: `
           <div class="pt-6"></div>
@@ -178,7 +163,7 @@ export const allCases: TTagData[] = [
         title: "跨越人力瓶颈：构建智能化跨境电商解决方案，实现资源优化与运营精进",
         tag: "环世物流供应链",
         module: "cross",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923160434/8d05d78a-8a84-448c-9d6e-07e6f174b929/cases-5.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240923160434/8d05d78a-8a84-448c-9d6e-07e6f174b929/环世.jpg",
         introduction: "大掌柜助力环世通过数字化解决方案，培养专业人才，打造跨境电商仓配服务的领导品牌",
         content: `
           <div class="pt-6"></div>
@@ -220,7 +205,7 @@ export const allCases: TTagData[] = [
         title: "数字化转型与客户服务优化的深度实践",
         tag: "中联",
         module: "ship",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240920154242/13d4c38b-6823-4603-8c35-54c1a91caf81/cases-6.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240920154242/13d4c38b-6823-4603-8c35-54c1a91caf81/中联.jpg",
         introduction: "大掌柜助力中联物流共创只会物流未来",
         content: `
           <div class="pt-6"></div>
@@ -276,7 +261,7 @@ export const allCases: TTagData[] = [
         title: "大掌柜引领OVP构建一站式航运服务平台：科技革新与用户体验双升级",
         tag: "OVP Shipping",
         module: "ship",
-        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240924091910/4a3b37dd-c1df-4e58-acf7-dbdf2c804159/cases-7.jpeg",
+        imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240924091910/4a3b37dd-c1df-4e58-acf7-dbdf2c804159/ovp.jpg",
         introduction: "从官网重塑到实时物流：OVP平台转型树立行业新标杆",
         content: `
           <p class="pt-4">大掌柜为OVP建设以客户为中心、科技为驱动、高可用的一站式新型航运服务生态平台</p>
@@ -311,7 +296,7 @@ export const allCases: TTagData[] = [
 ];
 
 const data: TCaseData = {
-  bannerUrl: "https://img.js.design/assets/img/66b4907cbed65308b2ddf9fa.png#3f81b04ff856f2bce2264c2bc30cb401",
+  bannerUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241025140945/f6186a68-80f0-41a8-bc25-6bcf2633098f/客户案例.jpg",
   tags: [
     {
       name: "",

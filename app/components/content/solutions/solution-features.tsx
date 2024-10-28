@@ -1,26 +1,30 @@
 import { TContent } from "@/app/apis/home";
-import SolutionCount from "@components/content/solution-count";
+import SolutionCount from "@/app/components/content/solutions/solution-count";
 
 interface ISolutionFeatures {
   data: TContent[] | undefined;
   name: string;
 }
 
-const getGridCols = (len: number = 4) => {
-  return `grid-cols-${len}`;
-};
-
 const SolutionFeatures: React.FC<ISolutionFeatures> = (
   props: ISolutionFeatures
 ) => {
+
+  const gridClassName = `w-[1360px] grid gap-x-10`;
+
+  const gridColumnsStyle = (length = 4) => {
+    return {
+      gridTemplateColumns: `repeat(${length}, minmax(0, 1fr))`
+    }
+  }
+
   return (
     <div className="flex flex-col space-y-16 pt-12 pb-16 items-center justify-center bg-neutral-100">
       <div className="text-4xl font-black flex flex-col items-center gap-y-2">{props.name.split('。').map((line, index) => <div key={index}>{line}</div>)}</div>
       <div>
         <div
-          className={`w-[1360px] grid ${getGridCols(
-            props.data?.length
-          )} gap-x-10`}
+          className={gridClassName}
+          style={{...gridColumnsStyle(props.data?.length)}}
         >
           {props.data?.map((item, index) => (
             <div key={index}>
@@ -33,9 +37,8 @@ const SolutionFeatures: React.FC<ISolutionFeatures> = (
           ))}
         </div>
         <div
-          className={`w-[1360px] grid ${getGridCols(
-            props.data?.length
-          )} gap-x-10 pt-4`}
+          className={`${gridClassName} pt-4`}
+          style={{...gridColumnsStyle(props.data?.length)}}
         >
           {props.data?.map((item, index) => (
             <div key={index} className="break-words text-wrap">

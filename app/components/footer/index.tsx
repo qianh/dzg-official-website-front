@@ -19,7 +19,7 @@ export default async function Footer() {
     <div className="flex justify-center h-[520px] bg-slate-900 text-white relative">
       <div className="w-[1360px] flex flex-col">
         <div className="flex pt-16">
-          <div className="pr-60">
+          <div className="pr-20">
             <Image
               src={"/home/footer-logo.png"}
               alt="logo"
@@ -72,7 +72,6 @@ export default async function Footer() {
         </div>
       </div>
       <div className="flex justify-between items-center absolute bottom-16 w-[1360px]">
-        <div>三方平台</div>
       </div>
       <Copyright />
     </div>

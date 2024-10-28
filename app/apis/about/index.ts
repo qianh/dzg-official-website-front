@@ -7,7 +7,7 @@ export type TAboutData = {
 };
 
 const data: TAboutData = {
-  bannerUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240926160240/0c59a497-57e8-48b9-bb93-31ee988d1103/关于我们.jpg",
+  bannerUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240926160240/0c59a497-57e8-48b9-bb93-31ee988d1103/关于我们.png",
   tags: [
     {
       name: "简介",
@@ -16,29 +16,25 @@ const data: TAboutData = {
         {
           title: "大掌柜，一站式数智化跨境物流软件服务提供商",
           introduction: "宁波大掌柜物流科技有限公司成立于2015年，是国内领先的数智化物流解决方案服务提供商，中国国际物流SaaS软件和产业互联网服务的先行者，为供应链上下游企业提供全量全要素的数字化软件产品与方案实施服务。大掌柜帮助企业建立自己的商务平台，实现业务的在线化、数字化、标准化、自动化和智能化，构建跨区域营销服务和运营管理的能力，编织全球营销服务网络，高效低成本的随时、随地、随意做生意和管生意。",
-          imageUrl: "https://img.js.design/assets/img/66b490975c6a4ce695c7c09b.png#00138cd12edd43b26a4299c0841515d9",
+          imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022153040/40c61391-f048-421a-81b1-81aaaaeb3911/右侧配图.png",
         },
       ],
     },
     {
       name: "案例特点",
-      code: "solution-count",
+      code: "solutions/solution-count",
       list: [
         {
-          title: "解决方案特点1",
-          simpleContent: "78",
+          title: "年国际物流行业经验",
+          simpleContent: "20",
         },
         {
-          title: "解决方案特点2",
-          simpleContent: "100",
+          title: "企业客户项目经验",
+          simpleContent: "1000",
         },
         {
-          title: "解决方案特点3",
-          simpleContent: "200",
-        },
-        {
-          title: "解决方案特点4",
-          simpleContent: "399",
+          title: "软件著作&专利",
+          simpleContent: "80",
         },
       ],
     },

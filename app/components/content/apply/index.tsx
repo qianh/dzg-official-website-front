@@ -4,16 +4,16 @@ import { useForm } from "react-hook-form";
 import Input from "@components/input";
 import Loading from "@components/Loading";
 import toast from "@components/toast";
+import request from "@/utils/request";
 
 interface IPartnersProps {}
 
 type FieldValues = {
-  user_name: string;
+  name: string;
   mobile: string;
   email: string;
-  corp_name: string;
-  region: string;
-  message: string;
+  orgName: string;
+  address: string;
 };
 
 type FIELD_ITEM = {
@@ -25,7 +25,7 @@ type FIELD_ITEM = {
 };
 
 const FORM_FIELD_LIST: FIELD_ITEM[] = [
-  { field: "user_name", label: "姓名", required: true, msg: "请输入您的姓名" },
+  { field: "name", label: "姓名", required: true, msg: "请输入您的姓名" },
   {
     field: "mobile",
     label: "电话",
@@ -47,7 +47,7 @@ const FORM_FIELD_LIST: FIELD_ITEM[] = [
     },
   },
   {
-    field: "corp_name",
+    field: "orgName",
     label: "公司名称",
     required: true,
     msg: "请输入您的公司名称",
@@ -67,17 +67,15 @@ export default function Apply(props: IPartnersProps) {
 
   const summit = async (data: any) => {
     setLoading(true);
-    wlCustomFormComp.linkToWL(
-      {
-        wl_form_id: "1832991416381472768",
-        formData: data,
-      },
-      () => {
-        toast.success("提交成功");
-        reset();
-        setLoading(false);
-      }
-    );
+    request.post('https://crm-dingtalk.tungee.com/standard/marketing/api/ad-lead/openReceive/671af50beb248a20839c0d3e', {...data})
+    .then(response => {
+      toast.success("提交成功");
+      reset();
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error during posting:', error);
+    });
   };
 
   return (

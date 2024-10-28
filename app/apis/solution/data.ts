@@ -1,15 +1,29 @@
 import { TTagData } from "@apis/home";
-
 import { SolutionItemType } from "./index";
 
 export const otherSolutions: TTagData = {
   name: "相关解决方案",
   code: "cases/MoreCase",
   list: [
-    { title: "Django+Vue+Docker企业OA系统", url: "/solutions/cross" },
-    { title: "Django+Vue+Docker企业OA系统", url: "/solutions/cross" },
-    { title: "Django+Vue+Docker企业OA系统", url: "/solutions/cross" },
-    { title: "Django+Vue+Docker企业OA系统", url: "/solutions/cross" },
+    {
+      title: "All in One 国际物流供应链集成方案",
+      url: "/solutions/allinone",
+      tag: "solution",
+      imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145244/11003ebe-ba01-4aa2-a174-e6326c9ea31c/货运操作.png"
+    },
+    { title: "跨境物流一体化方案", url: "/solutions/cross", tag: "solution", imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241025142147/2aa6fe18-af8b-4cb1-8fee-4ecd2a935c97/跨境.jpg" },
+    // {
+    //   title: "Django+Vue+Docker企业OA系统",
+    //   url: "/solutions/1234",
+    //   tag: "solution",
+    // },
+    { title: "小微货代业务系统方案", url: "/solutions/micro", tag: "solution", imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241025142312/139c7105-0a72-44d8-9ed4-21f628ca1c7a/小微.jpg" },
+    {
+      title: "高效协同办公集成方案",
+      url: "/solutions/efficiency",
+      tag: "solution",
+      imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241025142333/188cffa5-6b5b-4c32-971e-34f096095fb0/高效.jpg"
+    },
   ],
 };
 
@@ -17,87 +31,20 @@ export const allData: SolutionItemType[] = [
   {
     name: "All in One 国际物流供应链集成方案",
     code: "allinone",
-    bannerUrl: "/solution/banner.png",
+    bannerUrl: "",
     tags: [
       {
         name: "All in One 国际物流供应链集成方案",
-        code: "pain-points",
-        list: [
-          {
-            title: "扩大仓库运营规模",
-            url: "/solution/pointIcon.png",
-            introduction:
-              "通过系统和功能之间的紧密集成，自动化劳动密集型的手动流程，最大化库存库位利用率、存储和补货效率，帮助简化流程并提高生产力。",
-          },
-          {
-            title: "确保订单履行和交付",
-            url: "/solution/pointIcon.png",
-            introduction:
-              "通过保持收发货各个环节的可见性，并根据服务级别协议和交付承诺提供详细的仓库指示，从而提高透明度和管控力。",
-          },
-          {
-            title: "避免中断和罚款",
-            url: "/solution/pointIcon.png",
-            introduction:
-              "通过质量保证和检疫功能、条形码跟踪、扫描和验证以及准确及时的数字通信和审计跟踪，降低风险，最大限度减少错误，并履行尽职调查义务。 ",
-          },
-          {
-            title: "提高收入和盈利能力",
-            url: "/solution/pointIcon.png",
-            introduction:
-              "通过系统导向型任务，最大限度利用资源、流程和空间，从而降低成本，增强团队能力；提供增值服务以帮助您提升客户关系价值和粘性。",
-          },
-        ],
+        code: "solutions/solution-allinone",
+        list: [],
       },
-      {
-        name: "解决方案特点",
-        code: "solution-features",
-        list: [
-          { title: "解决方案特点1", simpleContent: "78" },
-          { title: "解决方案特点2", simpleContent: "100" },
-          { title: "解决方案特点3", simpleContent: "100" },
-          { title: "解决方案特点4", simpleContent: "100" },
-        ],
-      },
-      {
-        name: "",
-        code: "solution-cases",
-        list: [
-          {
-            title: "协同集成系统，消除企业信息鸿沟，让业务协同更高效",
-            introduction:
-              "提供从报价、订单、业务操作、客商管理、财务管理、OA、销售管理、BI等一站式行业应用系统，通过任务驱动，让员工、客户和合作伙伴在一个平台上办公，无论在国内还是在国外，如同在一个办公室里办公。",
-            url: "/solution/solution-case.png",
-          },
-          {
-            title:
-              "智能依靠智能技术，将人从繁杂的工作中解放出来，让办公更轻松，更高效",
-            introduction:
-              "智能单证识别技术，轻松识别运价表、托书、对账单等，效率提升20倍； 智能操作，通过机器学习，将经验丰富的老员工经验变为知识，系统自动指导员工开展工作，每一个新人都能轻松驾驭复杂工作。",
-            url: "/solution/solution-case.png",
-          },
-          {
-            title: "协同集成系统，消除企业信息鸿沟，让业务协同更高效",
-            introduction:
-              "提供从报价、订单、业务操作、客商管理、财务管理、OA、销售管理、BI等一站式行业应用系统，通过任务驱动，让员工、客户和合作伙伴在一个平台上办公，无论在国内还是在国外，如同在一个办公室里办公。",
-            url: "/solution/solution-case.png",
-          },
-          {
-            title:
-              "智能依靠智能技术，将人从繁杂的工作中解放出来，让办公更轻松，更高效",
-            introduction:
-              "智能单证识别技术，轻松识别运价表、托书、对账单等，效率提升20倍； 智能操作，通过机器学习，将经验丰富的老员工经验变为知识，系统自动指导员工开展工作，每一个新人都能轻松驾驭复杂工作。",
-            url: "/solution/solution-case.png",
-          },
-        ],
-      },
-      otherSolutions
     ],
   },
   {
     name: "跨境物流一体化方案",
     code: "cross",
-    bannerUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927103420/f8402c9e-ba9a-44b4-8f7a-dacbd236b9ef/banner-3-2.jpeg",
+    bannerUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927103420/f8402c9e-ba9a-44b4-8f7a-dacbd236b9ef/跨境.jpg",
     tags: [
       {
         name: "跨境仓配运营正在面临这些挑战",
@@ -131,7 +78,7 @@ export const allData: SolutionItemType[] = [
       },
       {
         name: "多流程方案亮点。即刻加速跨境业务腾飞",
-        code: "solution-features",
+        code: "solutions/solution-features",
         list: [
           { title: "跨境订单自动化生成" },
           { title: "物流智能集成" },
@@ -142,7 +89,7 @@ export const allData: SolutionItemType[] = [
       },
       {
         name: "",
-        code: "solution-cases",
+        code: "solutions/solution-cases",
         list: [
           {
             title: "电商客户专属解决方案，优化全链路物流管理",
@@ -153,7 +100,8 @@ export const allData: SolutionItemType[] = [
                 <li>通过智能计算，对仓库分配与尾程配送进行优选，不仅提升物流链路的协同效率，还降低客户的运输成本，实现供应链管理的精细化与成本效益最大化。</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102339/329f861a-8352-42f4-ae87-2e819a60a9d5/solution-2-1.jpeg",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102339/329f861a-8352-42f4-ae87-2e819a60a9d5/solution-2-1.png",
           },
           {
             title: "全面优化仓配运营，提升业务智能管理",
@@ -166,7 +114,8 @@ export const allData: SolutionItemType[] = [
                 <li>数据分析和报告：收集和分析订单数据，提供客户、仓库服务商、快递服务商等运营报告，帮助企业做出更明智的业务决策，实现运营赋能。</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102405/ad1a67cc-b5e9-4931-a15e-d9af4a22c26f/solution-2-2.jpeg",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102405/ad1a67cc-b5e9-4931-a15e-d9af4a22c26f/solution-2-2.png",
           },
           {
             title: "高效服务商资源管理，打造透明化供应链",
@@ -177,7 +126,8 @@ export const allData: SolutionItemType[] = [
                 <li>引入供应服务商评级模块，从多个维度对服务商的服务质量进行管控和分析。通过优胜劣汰的机制，确保服务资源的稳定性和可靠性。</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102424/8e7b1341-41cf-4fdd-8839-bb484bdc566f/solution-2-3.jpeg",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927102424/8e7b1341-41cf-4fdd-8839-bb484bdc566f/solution-2-3.png",
           },
           {
             title: "费用智能管理",
@@ -189,17 +139,17 @@ export const allData: SolutionItemType[] = [
                 <li>配备自动对账小工具，不仅确保对账的准确性，同时大幅提升对账效率，减少人工操作的时间和精力。</li>
               </ul>
             `,
-            imageUrl: "/solution/solution-case.png",
+            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024153415/7eed604d-c708-4174-97ff-7730529780a6/solution-2-4.png",
           },
         ],
       },
-      otherSolutions
     ],
   },
   {
     name: "小微货代业务系统方案",
     code: "micro",
-    bannerUrl: 'https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927135330/5097d474-2da3-4e9c-9096-b0d63fd2b1b6/banner-3-4.jpeg',
+    bannerUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024135245/bb131f95-cf5b-4696-bd85-2ce11b8a3cb8/22年信赖之选.png",
     tags: [
       {
         name: "小微货代行业为什么需要专业的流程与数据管理？",
@@ -222,31 +172,81 @@ export const allData: SolutionItemType[] = [
             url: "/solution/pointIcon.png",
             introduction:
               "1. 员工专业程度不同，带教需要一定时间\n2. 服务标准无统一，易造成客户体验不佳",
-          }
+          },
         ],
       },
       {
         name: "更适配小微货代业务的解决方案。1000+货代企业选择大掌柜。管理痛点轻松解决，业务效率显著提升",
-        code: "solution-features",
+        code: "solutions/solution-features",
         list: [
-          { title: "在线协同办公，更敏捷", content: '打破空间/时间限制，团队成员随时随地即可开展在线协作沟通，响应速度直线提升' },
-          { title: "一站式数字化管理，更全能", content: '大掌柜业务系统可以适应各类业务流程，提供从业务录入到财务分析的“业财一体化”全流程数字化管理' },
-          { title: "无需专人维护，更省钱", content: '采用更简洁明了的大掌柜业务系统，运维成本降低了，资金使用效率提高了，企业效益实现了最大化' },
-          { title: "最新功能随享随用，更贴心", content: '紧随市场变化和客户心声，持续优化升级系统功能，改善解决方案，助力企业实现业务一体化' },
+          {
+            title: "在线协同办公，更敏捷",
+            content:
+              "打破空间/时间限制，团队成员随时随地即可开展在线协作沟通，响应速度直线提升",
+          },
+          {
+            title: "一站式数字化管理，更全能",
+            content:
+              "大掌柜业务系统可以适应各类业务流程，提供从业务录入到财务分析的“业财一体化”全流程数字化管理",
+          },
+          {
+            title: "无需专人维护，更省钱",
+            content:
+              "采用更简洁明了的大掌柜业务系统，运维成本降低了，资金使用效率提高了，企业效益实现了最大化",
+          },
+          {
+            title: "最新功能随享随用，更贴心",
+            content:
+              "紧随市场变化和客户心声，持续优化升级系统功能，改善解决方案，助力企业实现业务一体化",
+          },
         ],
       },
       {
         name: "更好用的小微货代业务系统解决方案。22年信赖优选，一票到底操作便捷，为货代创业者护航梦想",
-        code: "solution-cases",
-        list: [],
+        code: "solutions/solution-cases",
+        list: [
+          {
+            title: "电商客户专属解决方案，优化全链路物流管理",
+            content: `
+              <div>
+                <div class="pb-4">原先：业务文件存档全线下纸质化，信息交换、员工办公协同极其不便</div>
+                <div>现在：系统实现了业务、财务一体化管理，信息实时共享，员工之间在线协同成为办公高频；自动取值，收支毛利智能计算，数据更准确，让费用信息一目了然，辅助做出更准确的决策</div>
+              </div>
+            `,
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024153712/66cfc2d9-2b50-4e92-b50c-bbc7507c7b9f/solution-4-1.png",
+          },
+          {
+            title: "全面优化仓配运营，提升业务智能管理",
+            content: `
+              <div>
+                <div class="pb-4">原先：货代企业因业务流程繁多，且内部没有统一有效的管理方法，易造成数据泄漏，影响到业务安全</div>
+                <div>现在：大掌柜业务系统提供规范的审核管理流程，按需分配员工权限，保障了经营数据安全；支持智能生成各类经营报表，精准把控财务收支风险。</div>
+              </div>
+            `,
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024153732/60a8232a-9a4d-4ec9-af64-a6aca951c753/solution-4-2.png",
+          },
+          {
+            title: "高效服务商资源管理，打造透明化供应链",
+            content: `
+              <div>
+                <div class="pb-4">原先：局域网办公限制了员工的办公/沟通协作场所，且需专人维护系统，费用高昂</div>
+                <div>现在：轻轻松松即实现了线上无纸化办公；按需购买员工账号个数，成本进一步得到精简；系统自动化更新，操作便捷功能易理解；客服在线解答，对外品牌形象统一。</div>
+              </div>
+            `,
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024153746/14aceefe-0c41-4217-a495-95f745970457/solution-4-3.png",
+          }
+        ],
       },
-      otherSolutions
-    ]
+    ],
   },
   {
     name: "高效协同办公集成方案",
     code: "efficiency",
-    bannerUrl: 'https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927105037/cddf40a5-5322-4af0-9b78-63a921f70fb7/banner-3-5.jpeg',
+    bannerUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927105037/cddf40a5-5322-4af0-9b78-63a921f70fb7/高效.jpg",
     tags: [
       {
         name: "物流行业协同管理挑战",
@@ -280,17 +280,33 @@ export const allData: SolutionItemType[] = [
       },
       {
         name: "更适配物流行业的特色协同方案。为1000+货代企业带来管理价值",
-        code: "solution-features",
+        code: "solutions/solution-features",
         list: [
-          { title: "操作记录留档。管理更有章法", content: '区别于线下协同，该解决方案让所有系统操作过程均有效记录留档，回溯有痕，减少员工间纠纷扯皮，让管理不再成为难题' },
-          { title: "岗位间协同优化提升", content: '此前，每一工作环节需要人工一一通知或自行查看，容易遗漏或耽误订单进程；现在，该解决方案让各工作节点均有效通知到企业内部对应角色，各岗位高效协同，减少工作延误，提高工作效率' },
-          { title: "业务流程可视化", content: '从客户订舱委托到跟单、费用结算，全程物流可视化，加速业务跟进，方便业务人员及时了解业务进展，并快速处理业务中的每一环节，提效降本' },
-          { title: "服务升级。品牌形象更具高度", content: '智能回复业务信息，有效提醒客户；统一品牌形象呈现，专业水准的服务品质，客户体验都说好' },
+          {
+            title: "操作记录留档。管理更有章法",
+            content:
+              "区别于线下协同，该解决方案让所有系统操作过程均有效记录留档，回溯有痕，减少员工间纠纷扯皮，让管理不再成为难题",
+          },
+          {
+            title: "岗位间协同优化提升",
+            content:
+              "此前，每一工作环节需要人工一一通知或自行查看，容易遗漏或耽误订单进程；现在，该解决方案让各工作节点均有效通知到企业内部对应角色，各岗位高效协同，减少工作延误，提高工作效率",
+          },
+          {
+            title: "业务流程可视化",
+            content:
+              "从客户订舱委托到跟单、费用结算，全程物流可视化，加速业务跟进，方便业务人员及时了解业务进展，并快速处理业务中的每一环节，提效降本",
+          },
+          {
+            title: "服务升级。品牌形象更具高度",
+            content:
+              "智能回复业务信息，有效提醒客户；统一品牌形象呈现，专业水准的服务品质，客户体验都说好",
+          },
         ],
       },
       {
         name: "协同管理整体解决方案",
-        code: "solution-cases",
+        code: "solutions/solution-cases",
         list: [
           {
             title: "服务始终在线，客户倍感信赖",
@@ -301,7 +317,8 @@ export const allData: SolutionItemType[] = [
                 <li>规范服务，可信任</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134532/8a89b002-c035-40e5-b585-c9df84b30552/solution-5-1.png,https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134551/421351ba-c797-4f6e-9ab3-450af337ed1e/solution-5-2.png",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134532/8a89b002-c035-40e5-b585-c9df84b30552/solution-5-1.png",
           },
           {
             title: "智能发送业务信息，业务跟进如此简单",
@@ -312,7 +329,8 @@ export const allData: SolutionItemType[] = [
                 <li>一键取值业务，告别无效复制粘贴</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134626/78457eca-f872-4537-96e4-0c5245ad474f/solution-5-3.png",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134551/421351ba-c797-4f6e-9ab3-450af337ed1e/solution-5-2.png",
           },
           {
             title: "履约更规范，协同更轻松，告别重复工作",
@@ -324,7 +342,8 @@ export const allData: SolutionItemType[] = [
                 <li>即时信息直通钉钉，紧急事件@，方便快捷</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134702/7bb5e91c-c87f-45f7-a5e0-28153860a7c5/solution-5-4.png",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134626/78457eca-f872-4537-96e4-0c5245ad474f/solution-5-3.png",
           },
           {
             title: "管理标准沉淀，工作更规范、高效",
@@ -335,11 +354,270 @@ export const allData: SolutionItemType[] = [
                 <li>归类处理待办，工作效率直线提升</li>
               </ul>
             `,
-            imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134720/6265fe09-4ff1-4348-9615-ca07b6ae95ab/solution-5-5.png,https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134739/f23f8b46-3aab-44b5-9ec0-a07cd1f55b7c/solution-5-6.png",
+            imageUrl:
+              "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927134702/7bb5e91c-c87f-45f7-a5e0-28153860a7c5/soluton-5-4.png",
           },
         ],
       },
-      otherSolutions
-    ]
-  }
+    ],
+  },
 ];
+
+export type ItemType = {
+  label: string;
+  imageUrl?: string;
+  introduction: string;
+  code?: string;
+};
+
+const SolutionCardList: ItemType[] = [
+  {
+    label: "货运业务操作",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145244/11003ebe-ba01-4aa2-a174-e6326c9ea31c/货运操作.png",
+    introduction: "优化订单操作、费率管理、订舱等货代操作，实现线上化智能化",
+    code: "case1",
+  },
+  {
+    label: "客户营销与服务",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145300/efe4f298-9820-4f77-b6d1-7383d43cd18b/客户营销服务.png",
+    introduction: "集成运价管理和CRM销售管理等功能，实现价格策略优化、客户关系深化及个性化服务提供",
+    code: "case2",
+  },
+  {
+    label: "智能化与可视化",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145323/e140bd50-bc8a-452a-8228-c920c8295109/智能化与可视化.png",
+    introduction: "实现货物追踪、数据分析和预测优化，实现运输实时掌握及时决策",
+    code: "case3",
+  },
+  {
+    label: "行业生态链接",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145339/14c6bbea-69d7-4aff-9f7c-cad03d9ec041/行业生态链接.png",
+    introduction: "整合多方面资源，实现信息、资源和客户的生态循环，构建高效协同的行业生态圈，促进信息共享与流程优化",
+    code: "case4",
+  },
+];
+
+const AdvantageCardList: ItemType[] = [
+  {
+    label: "优化业务流程",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927103420/f8402c9e-ba9a-44b4-8f7a-dacbd236b9ef/banner-3-2.jpeg",
+    introduction: "集成众多客户成功经验，综合业务需求，改善客户业务操作流程。",
+  },
+  {
+    label: "数据精细化运营",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927103420/f8402c9e-ba9a-44b4-8f7a-dacbd236b9ef/banner-3-2.jpeg",
+    introduction:
+      "业务全过程线上化操作，随时获取符合条件的数据，减少错误及人力投入，精准运营。",
+  },
+  {
+    label: "工作更高效、更智能",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240927103420/f8402c9e-ba9a-44b4-8f7a-dacbd236b9ef/banner-3-2.jpeg",
+    introduction:
+      "结合AI、RPA，更多智能自动化的应用和可视化工具，助您简化整个业务流程。",
+  },
+];
+
+export const AllInOneData = {
+  topBanner: {
+    label: "为国际物流业务数智化转型量身定制",
+    introduction: "单一集成平台，为企业执行各类复杂物流货运业务保驾护航。",
+    imageUrl:
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145244/11003ebe-ba01-4aa2-a174-e6326c9ea31c/货运操作.png",
+  },
+  solutionCardList: SolutionCardList,
+  advantageCardList: AdvantageCardList,
+};
+
+export const AllInOneDetailData: {[key: string]: any} = {
+  case1: {
+    topBanner: {
+      ...SolutionCardList[0],
+    },
+    advantageCardList: [
+      {
+        label: "单一平台整合多业务类型",
+        introduction:
+          "通过一个系统即可支持海整，空运，铁路，跨境等多业务服务类型，满足从业务到财务结算的所有场景需求。",
+      },
+      {
+        label: "以人为本的效率工具",
+        introduction:
+          "集成多种效率工具，用最简单高效的办公方式，提高工作效率，实时提醒，减少重复工作的消耗。",
+      },
+      {
+        label: "全流程线上化",
+        introduction:
+          "协同互动在线，审批在线，一个平台完成业务相关工作的聚合，全面实现办公无纸化。",
+      },
+    ],
+    featureList: [
+      {
+        label: "Control Tower",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024144941/f9791f48-2a8c-4891-8ae2-79cc3671a838/1.1.png",
+        introduction:
+          "老板视图，管理者视图，提供实时的公司经营数据展示，一切让数据说话，管理更轻松个人视图，待办协同，用数据指导每个人的日常工作，用系统规范业务操作流程。",
+      },
+      {
+        label: "全表格工作列表",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145045/883c71d4-2a39-4083-afb0-96219c4e6d55/1.2.png",
+        introduction:
+          "全EXCEL组件，让日常工作回归高效本质，减少系统流程管理而带来的负向增加人员成本问题。",
+      },
+      {
+        label: "全流程线上化",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145059/71b3b173-a5d2-42f6-857b-8326990c0638/1.3.png",
+        introduction:
+          "协同互动在线，审批在线，一个平台完成业务相关工作的聚合，全面实现办公无纸化。",
+      },
+    ],
+    solutionCardList: SolutionCardList.filter((item) => item.code !== "case1"),
+  },
+  case2: {
+    topBanner: {
+      ...SolutionCardList[1],
+    },
+    advantageCardList: [
+      {
+        label: "多语言货代官网",
+        introduction:
+          "为您的客户提供运价、订单可视化跟踪查询等服务，提升企业品牌形象。",
+      },
+      {
+        label: "运价管理集成",
+        introduction:
+          "支持海整，海拼，空运运价的管理维护，电商运价接入，客户询报价一键回复。",
+      },
+      {
+        label: "CRM销售过程管理集成",
+        introduction:
+          "CRM系统应用集成，为销售赋能，客户转换更轻松。",
+      },
+    ],
+    featureList: [
+      {
+        label: "小程序营销",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145113/94dbc2bb-0d15-4216-a7b5-ea0991e6f44a/2.1.png",
+        introduction:
+          "转换私域流量，快速获客，提供更加便捷的渠道",
+      },
+      {
+        label: "线上化履约服务",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145125/93292454-f1dd-4945-8547-7e027e95f314/2.2.png",
+        introduction:
+          "在线下单，提单确认，费用确认，账单确认等场景支持，为平台型企业打造完整的线上化客户服务模式。",
+      },
+      {
+        label: "全面客户画像支持",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145141/9f509d3f-0604-41dc-8fd1-55f876a1193e/2.3.png",
+        introduction:
+          "整合销售过程，客户需求、历史订单、海量公开信息，让您全方位了解您的客户，提升转换。",
+      },
+    ],
+    solutionCardList: SolutionCardList.filter((item) => item.code !== "case2"),
+  },
+  case3: {
+    topBanner: {
+      ...SolutionCardList[2],
+    },
+    advantageCardList: [
+      {
+        label: "AI数字员工",
+        introduction:
+          "结合大模型能力，创造人机工作协同新趋势。",
+      },
+      {
+        label: "RPA业务自动化",
+        introduction:
+          "系统融合型RPA机器人，更短的操作链路，更稳定更多的场景支持。",
+      },
+      {
+        label: "可视化服务集成",
+        introduction:
+          "整合多方数据资源，自主运营，关键结点自动更新业务数据，异常推送，全链路可视化跟踪。",
+      },
+    ],
+    featureList: [
+      {
+        label: "AI询报价",
+        videoUrl:
+          "http://go.plvideo.cn/front/video/view?vid=a22313bcc57bbcad498bcebda6dc0a65_a",
+        introduction:
+          "互动式询报价新体验，轻松完成客户报价全过程。",
+      },
+      {
+        label: "订舱流程自动化",
+        videoUrl:
+          "http://go.plvideo.cn/front/video/view?vid=a22313bcc58c1adbbc70e2404ab4123e_a",
+        introduction:
+          "从委托到放舱整个过程，实现无人为干预，省心省力，效率翻倍。",
+      },
+      {
+        label: "可视化数据订阅",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241025140646/6dea4fd4-5d62-43f4-baea-400dc4583c04/solution-3-3.png",
+        introduction:
+          "自动回写关键业务节点，数据变动邮件/OA应用实时通知，可为您的客户定制数据可视化服务。",
+      },
+    ],
+    solutionCardList: SolutionCardList.filter((item) => item.code !== "case3"),
+  },
+  case4: {
+    topBanner: {
+      ...SolutionCardList[3],
+    },
+    advantageCardList: [
+      {
+        label: "自建EDI数据交换中心",
+        introduction:
+          "支持承运人，港区码头，EDI平台等对接，实现数据交换。",
+      },
+      {
+        label: "对接平台链接客户及代理",
+        introduction:
+          "低代码对接平台实现客户及海外代理快速对接，增加您与客户的业务粘性，提升客户满意度。",
+      },
+      {
+        label: "自运营平台客户生态链接",
+        introduction:
+          "平台内客户业务线上链接，高效协同，为客户创造更多业务价值。",
+      },
+    ],
+    featureList: [
+      {
+        label: "EDI中心",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145156/fdf0d497-8e0c-4eb0-86d6-8e62e524fc5f/4.1.png",
+        introduction:
+          "已支持XXX个平台，XX家船东等承运人及供应商的订舱，提单， VGM，无纸化等数据交换场景。",
+      },
+      {
+        label: "掌柜互联",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145210/4db2a690-2e20-475f-83a9-7b5e6daf5f16/4.2.png",
+        introduction:
+          "实现平台内运价互联，订单互联，舱单，费用等数据交换场景，线上完成业务撮合沟通。",
+      },
+      {
+        label: "海外代理对接",
+        imageUrl:
+          "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024145222/fdea73b7-3375-4376-aa1d-9e7d6c7da5a9/4.3.png",
+        introduction:
+          "通过系统直链，完成订单创建，信息回填，业务数据自动报告等场景，体现您的数字化业务能力。",
+      },
+    ],
+    solutionCardList: SolutionCardList.filter((item) => item.code !== "case4"),
+  },
+};

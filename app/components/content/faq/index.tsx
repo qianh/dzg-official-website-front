@@ -1,5 +1,6 @@
 import { TContent, TTagData } from "@apis/home";
 import DividingLine from "@components/dividing-line";
+import Image from "next/image";
 
 interface ITechSupportProps {
   name: string;
@@ -32,7 +33,9 @@ const TechSupport: React.FC<ITechSupportProps> = (props: ITechSupportProps) => {
   const renderBusinessQuestion = (content: TTagData) => {
     return (
       <div className="w-full">
-        <div className="pb-6">IMG</div>
+        <div className="pb-6">
+          <Image src={content.imageUrl!} alt="" width={380} height={90}></Image>
+        </div>
         {content.list?.map((item, index) => (
           <div key={index} className="flex space-x-2 items-center pb-4 items-center">
             <div className="w-2 h-[2px] bg-black"></div>

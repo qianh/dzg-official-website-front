@@ -103,12 +103,12 @@ export default function Cases({
               <span>客户详情</span>
               <ArrowLongRightIcon className="h-4 w-4" />
             </a>
-            <div className="absolute top-36 right-24">
+            <div className="absolute top-16 right-24">
               <Image
                 src={item.imageUrl || "/home/case-demo.png"}
                 alt="logo"
                 width={492}
-                height={188}
+                height={334}
               />
             </div>
           </div>

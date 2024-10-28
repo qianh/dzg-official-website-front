@@ -21,7 +21,7 @@ const Community: React.FC<CommunityProps> = async (props: CommunityProps) => {
         pd={26.7}
         children={
           <LinkBtn
-            paddingBottom={220}
+            paddingBottom={180}
             title="点击获取更多方案"
           />
         }

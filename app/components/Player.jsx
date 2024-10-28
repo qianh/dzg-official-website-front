@@ -13,18 +13,21 @@ class Player extends React.Component {
       .then(() =>{
         this.loadPlayer();
       });
+    } else {
+      this.loadPlayer();
     }
   }
 
   componentWillUnmount() {
     if(this.player){
+      console.log(this.player);
       this.player.destroy();
     }
   }
 
   loadPlayer() {
     this.player = window.polyvPlayer({
-      wrap: '.dzg-player',
+      wrap: this.props.wrap || '.dzg-player',
       width: '100%',
       height: '100%',
       vid: this.props.vid,

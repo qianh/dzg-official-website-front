@@ -5,17 +5,17 @@ import Input from "@components/input";
 import Checkbox from "@components/input/Checkbox";
 import Loading from "@components/Loading";
 import toast from "@components/toast";
+import request from "@/utils/request";
 
 interface ContractFormProps {}
 
 type FieldValues = {
-  user_name: string;
+  name: string;
   mobile: string;
   email: string;
-  corp_name: string;
-  corp_address: string;
-  _gongsizhuyingyewu: string;
-  _gongsizhuyingyewu_other: string;
+  orgName: string;
+  address: string;
+  business: string;
 };
 
 type FIELD_ITEM = {
@@ -28,7 +28,7 @@ type FIELD_ITEM = {
 };
 
 const FORM_FIELD_LIST: FIELD_ITEM[] = [
-  { label: "姓名", field: "user_name", required: true, msg: "请输入您的姓名" },
+  { label: "姓名", field: "name", required: true, msg: "请输入您的姓名" },
   {
     label: "电话",
     field: "mobile",
@@ -51,32 +51,17 @@ const FORM_FIELD_LIST: FIELD_ITEM[] = [
   },
   {
     label: "公司名称",
-    field: "corp_name",
+    field: "orgName",
     required: true,
     msg: "请输入您的公司名称",
   },
   {
     label: "所在省份",
-    field: "corp_address",
+    field: "address",
     required: true,
     msg: "请输入所在省份",
   },
 ];
-
-const MainBusiness: FIELD_ITEM = {
-  field: "_gongsizhuyingyewu",
-  label: "主营业务",
-  required: true,
-  msg: "请选择主营业务",
-  type: "checkbox",
-};
-
-const OtherBusiness: FIELD_ITEM = {
-  label: "",
-  field: "_gongsizhuyingyewu_other",
-  required: true,
-  msg: "请输入其他主营业务",
-};
 
 const ContractForm: React.FC<ContractFormProps> = (
   props: ContractFormProps
@@ -91,26 +76,18 @@ const ContractForm: React.FC<ContractFormProps> = (
 
   const [loading, setLoading] = useState(false);
 
-  const businessType = watch("_gongsizhuyingyewu");
-
   const summit = (data: any) => {
     setLoading(true);
-    wlCustomFormComp.linkToWL(
-      {
-        wl_form_id: "1820373133232832512",
-        formData: data,
-      },
-      () => {
-        toast.success("提交成功");
-        reset();
-        setLoading(false);
-      }
-    );
-  };
-
-  const showOtherBusiness = () => {
-    return (businessType || [""]).includes("10000")
-  };
+    request.post('https://crm-dingtalk.tungee.com/standard/marketing/api/ad-lead/openReceive/671af1aeeb248a20839c0d20', {...data})
+    .then(response => {
+      toast.success("提交成功");
+      reset();
+      setLoading(false);
+    })
+    .catch(error => {
+      console.error('Error during posting:', error);
+    });
+  }
 
   return (
     <div className="">
@@ -142,50 +119,6 @@ const ContractForm: React.FC<ContractFormProps> = (
               </div>
             );
           })}
-          <div className={`flex`}>
-            <div className={"h-[72px] w-[50%]"}>
-              <Checkbox
-                label={MainBusiness.label || ""}
-                name={MainBusiness.field}
-                required={MainBusiness.required}
-                children={[
-                  { name: "海运空运进口", value: "1" },
-                  { name: "跨境电商", value: "3" },
-                  { name: "其他", value: "10000" },
-                ]}
-                registerFunc={() =>
-                  register(MainBusiness.field, {
-                    required: MainBusiness.required ? MainBusiness.msg : false,
-                  })
-                }
-              />
-              {errors[MainBusiness.field] && (
-                <p className="text-red-500 text-sm pt-1 pl-1">
-                  {errors[MainBusiness.field]?.message}
-                </p>
-              )}
-            </div>
-            {showOtherBusiness() && (
-              <div className={"h-[72px] pt-[28px] pl-4 w-[50%]"}>
-                <Input
-                  label={OtherBusiness.label}
-                  placeholder={OtherBusiness.msg}
-                  required={OtherBusiness.required}
-                  {...register(OtherBusiness.field, {
-                    required: OtherBusiness.required
-                      ? OtherBusiness.msg
-                      : false,
-                    pattern: OtherBusiness.pattern,
-                  })}
-                />
-                {errors[OtherBusiness.field] && (
-                  <p className="text-red-500 text-sm pt-1 pl-1">
-                    {errors[OtherBusiness.field]?.message}
-                  </p>
-                )}
-              </div>
-            )}
-          </div>
         </div>
         <div className="w-[100%] pt-12">
           <button

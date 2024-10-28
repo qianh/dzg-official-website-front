@@ -61,7 +61,7 @@ export const companyNews = [
     id: 1070,
     title: "贺报 | 热烈祝贺大掌柜入选宁波市中小企业公共服务平台继续认定名单",
     introduction: "",
-    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240918092334/29ce6ebb-9d5c-40e0-a320-55dfd9534af7/news2.jpeg",
+    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022163928/2db78148-7d1e-4a98-a5ae-f4382d68be6e/news-xibao.png",
     source: "大掌柜",
     createTime: "2024年03月22日",
     content: `
@@ -72,7 +72,7 @@ export const companyNews = [
     id: 1010,
     title: "喜报 | 恭喜宁波大掌柜入选2024年度宁波市优秀产品推荐目录",
     introduction: "",
-    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240918093616/5b5a1b56-34a7-4ff6-bfb7-0741c4b4abff/news3.jpeg",
+    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022163928/2db78148-7d1e-4a98-a5ae-f4382d68be6e/news-xibao.png",
     source: "大掌柜",
     createTime: "2024年07月12日",
     content: `
@@ -83,7 +83,7 @@ export const companyNews = [
     id: 1050,
     title: "喜报 | 热烈祝贺大掌柜入围“2023年度宁波市数字经济百强",
     introduction: "",
-    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240918093639/f87150cf-1d1f-4566-ac4a-f32b050d3b02/news4.jpeg",
+    imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022163928/2db78148-7d1e-4a98-a5ae-f4382d68be6e/news-xibao.png",
     source: "大掌柜",
     createTime: "2024年04月29日",
     content: `

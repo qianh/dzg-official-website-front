@@ -8,7 +8,7 @@ export type TSupportData = {
 
 const data: TSupportData = {
   bannerUrl:
-    "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240926160157/e8a32c59-3b2d-46f7-aadc-1f9a4622e3cc/服务与支持.jpg",
+    "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20240926160157/e8a32c59-3b2d-46f7-aadc-1f9a4622e3cc/服务与支持banner.png",
   tags: [
     {
       name: "常见问题",
@@ -35,6 +35,7 @@ const data: TSupportData = {
         {
           name: "GM1功能说明",
           code: "GM1",
+          imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022152024/91043b76-dd27-4768-ae7e-e795be110533/support-1.jpg",
           list: [
             {
               title: "客商",
@@ -57,6 +58,7 @@ const data: TSupportData = {
         {
           name: "运价通功能说明",
           code: "yjt",
+          imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022152108/f18398e3-9d0e-4fd8-88b8-7cf02cae4a9a/support-3.jpg",
           list: [
             {
               title: "运价维护",
@@ -79,6 +81,7 @@ const data: TSupportData = {
         {
           name: "M系列功能说明",
           code: "modelHome",
+          imageUrl: "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241022152047/e8058b1c-0970-42b5-8bf0-7a8d9a69595b/support-2.jpg",
           list: [
             {
               title: "系统初始化",

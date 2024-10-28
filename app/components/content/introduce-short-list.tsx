@@ -21,7 +21,7 @@ const IntroduceShortList: React.FC<IntroduceShortListProps> = ({ data }) => {
               {item.title}
             </h2>
             <p className='text-base text-muted-foreground'>
-              {item.content}
+              {item.introduction}
             </p>
           </div>
           <div className='flex-1'>
