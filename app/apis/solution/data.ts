@@ -149,7 +149,7 @@ export const allData: SolutionItemType[] = [
     name: "小微货代业务系统方案",
     code: "micro",
     bannerUrl:
-      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024135245/bb131f95-cf5b-4696-bd85-2ce11b8a3cb8/22年信赖之选.png",
+      "https://qa600jit-public.oss-cn-hangzhou.aliyuncs.com/upload_public/sites/3/orgs/3/20241024135245/bb131f95-cf5b-4696-bd85-2ce11b8a3cb8/小微.jpg",
     tags: [
       {
         name: "小微货代行业为什么需要专业的流程与数据管理？",
